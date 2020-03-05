@@ -6,16 +6,14 @@ pipeline {
 	 {
 		steps
 		  {
-		  echo 'hello'
-           // sh "dotnet build 'TestWebApp/TestWebApp.csproj' -c Release -o /app"
+		    sh "dotnet build 'TestWebApp/TestWebApp.csproj' -c Release -o /app"
           }
      }
 	stage('Run')
 	{
      steps
 	 {
-	 echo 'hello1'
-         // sh "dotnet run 'TestWebApp/TestWebApp.csproj'"
+		 sh "dotnet run 'TestWebApp/TestWebApp.csproj'"
      }
     }
   }
