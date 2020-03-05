@@ -1,0 +1,12 @@
+﻿version: '3.4'
+
+services:
+  testApp:
+	container_name:testApp
+    image: testAppBuild
+	restart: always
+	build:
+      context: /TestWebApp
+      dockerfile: Dockerfile
+    ports:
+      - "9007:80"
