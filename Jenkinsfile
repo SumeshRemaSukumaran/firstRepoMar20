@@ -6,14 +6,14 @@
 	 {
 		steps
 		  {
-            sh "dotnet build "TestWebApp/TestWebApp.csproj" -c Release -o /app
+            sh "dotnet build 'TestWebApp/TestWebApp.csproj' -c Release -o /app"
           }
      }
 	stage('Run')
 	{
      steps
 	 {
-         sh "dotnet run "TestWebApp/TestWebApp.csproj"
+         sh "dotnet run 'TestWebApp/TestWebApp.csproj'"
      }
     }
   }
