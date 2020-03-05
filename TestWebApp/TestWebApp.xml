@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TestWebApp</name>
+    </assembly>
+    <members>
+        <member name="M:TestWebApp.Controllers.EmployeeController.Get">
+            <summary>
+            Employee list
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
