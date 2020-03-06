@@ -13,7 +13,7 @@ pipeline {
 	{
      steps
 	 {
-		 sh "dotnet run 'TestWebApp/TestWebApp.csproj' --project"
+		 sh "dotnet run -p 'TestWebApp/TestWebApp.csproj'"
      }
     }
   }
